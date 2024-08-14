@@ -1,1 +1,387 @@
-/* место для вашего кода */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    margin-top: 92px;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 96px;
+}
+
+li a {
+    color: black;
+}
+
+.header-menu {
+    display: flex;
+    gap: 32px;
+    justify-content: end;
+    list-style-type: circle;
+}
+  
+.header-menu-firstli {
+    list-style-type: none;
+}
+
+.header-menu-logo-link {
+    display: block;
+    justify-self: center;
+    align-self: center;
+    width: 148px;
+    height: 105px;
+}
+
+.header-menu-logo {
+    width: 100%;
+    height: 100%;
+}
+
+.adress-phone {
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+.adress-mail {
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+.adress-home {
+    width: 240px;
+    list-style-type: none;
+    word-break: break-all;
+}
+
+.header-menu-right-info {
+    display: block;
+    align-self: end;
+}
+
+.cover {
+    position: relative;
+    padding: 165px 50px 147px 50px;
+    background-image: url(../images/lotus-flower.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cover-opacity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.6;
+}
+
+.cover-title {
+    font-family: Raleway, sans-serif;
+    font-size: 100px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 20px;
+    margin-top: 165;
+    letter-spacing: 30px;
+}
+
+.cover-title-spacing {
+    letter-spacing: 60px;
+}
+
+.cover-title-normalizing-spacing {
+    letter-spacing: normal;
+}
+
+.cover-title-align-left {
+    display: block;
+}
+
+.cover-title-align-center {
+    text-align: center;
+}
+
+.cover-title-align-right {
+    text-align: right;
+}
+
+.cover-description {
+    padding-top: 147px;
+    position: relative;
+    display: flex;
+    align-self: flex-end;
+}
+
+.cover-description-text {
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+    padding-right: 400px;
+    padding-left: 78px;
+    word-spacing: 20px;
+    font-weight: 400;
+    font-family: Raleway, sans-serif;
+}
+
+.cover-auc-button {
+    cursor: pointer;
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 22px;
+    background-color: transparent;
+    border: 2px #fff solid;
+    justify-self: end;
+
+}
+
+.cover-auc-button:hover {
+    background-color: whitesmoke;
+    color: #010;
+}
+
+.lots {
+    margin-top: 180px;
+}
+
+.lots-header {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 64px;
+}
+
+.lots-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.first-lot {
+    background-image: url("../images/first-lot.png");
+    width: auto;
+    height: 563px;
+    margin-left: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.first-lot:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all .2s linear;
+}
+  
+.first-lot:hover:before {
+    background: none;
+}
+  
+.first-lot h3,
+.first-lot p {
+    position: relative;
+}
+
+.second-lot {
+    background-image: url("../images/second-lot.jpg");
+    width: auto;
+    height: 563px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.second-lot:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all .2s linear;
+}
+  
+.second-lot:hover:before {
+    background: none;
+}
+  
+.second-lot h3,
+.second-lot p {
+    position: relative;
+}
+
+.third-lot {
+    background-image: url("../images/third-lot.png");
+    width: auto;
+    height: 563px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.third-lot:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all .2s linear;
+}
+  
+.third-lot:hover:before {
+    background: none;
+}
+  
+.third-lot h3,
+.third-lot p {
+    position: relative;
+}
+
+.lot-title {
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 51px;
+    color: white;
+    font-weight: 700;
+    z-index: 3;
+    text-decoration: underline;
+}
+
+
+.first-lot-text {
+    font-size: 26px;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: Raleway, sans-serif;
+    line-height: 24px;
+    margin-top: 260px;
+}
+
+.second-lot-text {
+    font-size: 26px;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: Raleway, sans-serif;
+    line-height: 24px;
+    margin-top: 75px;
+}
+
+.third-lot-text {
+    font-size: 26px;
+    color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-family: Raleway, sans-serif;
+    line-height: 24px;
+    margin-top: 150px;
+}
+
+.lot-link {
+    padding-top: 20px;
+    font-family: Raleway;
+    margin-left: 64px;
+    font-size: 20px;
+    color: black;
+}
+
+.about {
+    margin-top: 100px;
+    display: flex;
+}
+
+.about-ellipse {
+    background-color: #000;
+    width: 250px;
+    height: 250px;
+    margin-left: 71px;
+    margin-top: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-logo {
+    width: 148px;
+    height: 114px;   
+}
+
+.about-content-header {
+    margin-left: 72px;
+    margin-top: 136px;
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.about-content-first-text {
+    margin-left: 72px;
+    width: 950px;
+    font-size: 24px;
+}
+
+.about-content-second-text {
+    margin-top: 24px;
+    font-size: 24px;
+    width: 1000px;
+    margin-left: 72px;
+}
+
+.footer-ono-tebe-nado {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-menu-left {
+    justify-content: start;
+    width: 240.52px;
+    margin-left: 50px;
+}
+
+.footer-adress {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.footer-center {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.footer-no-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-socials {
+    margin-right: 50px;
+}
