@@ -1,1 +1,1 @@
-https://github.com/UnityDuck/ono-tebe-nado
+https://github.com/UnityDuck/ono-tebe-nado UnityDuck
