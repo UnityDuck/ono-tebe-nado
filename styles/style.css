@@ -1,6 +1,4 @@
 body {
-    margin: 0;
-    padding: 0;
     font-family: Raleway, sans-serif;
 }
 
@@ -22,6 +20,10 @@ li a {
     gap: 32px;
     justify-content: end;
     list-style-type: circle;
+    font-size: 18px;
+    width: 391.48px;
+    height: 22px;
+    margin-left: 50.52px;
 }
   
 .header-menu-firstli {
@@ -29,9 +31,7 @@ li a {
 }
 
 .header-menu-logo-link {
-    display: block;
-    justify-self: center;
-    align-self: center;
+    margin-left: 36px;
     width: 148px;
     height: 105px;
 }
@@ -58,8 +58,8 @@ li a {
 }
 
 .header-menu-right-info {
-    display: block;
-    align-self: end;
+    font-size: 18px;
+    margin-left: 184px;
 }
 
 .cover {
@@ -118,31 +118,34 @@ li a {
     padding-top: 147px;
     position: relative;
     display: flex;
-    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
 }
 
 .cover-description-text {
     text-transform: uppercase;
     color: white;
     font-size: 22px;
-    padding-right: 400px;
-    padding-left: 78px;
-    word-spacing: 20px;
+    margin-left: 78px;
+    word-spacing: 10px;
     font-weight: 400;
     font-family: Raleway, sans-serif;
+    width: 637px;
+    height: 28px;
 }
 
 .cover-auc-button {
-    cursor: pointer;
+    padding: 14px 32px;
     color: #fff;
+    cursor: pointer;
     font-family: Raleway, sans-serif;
     font-weight: 500;
-    text-transform: uppercase;
-    font-size: 22px;
+    border: 1px #fff solid;
     background-color: transparent;
-    border: 2px #fff solid;
-    justify-self: end;
-
+    font-size: 22px;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
 }
 
 .cover-auc-button:hover {
@@ -151,6 +154,7 @@ li a {
 }
 
 .lots {
+    width: 1100px;
     margin-top: 180px;
 }
 
@@ -159,6 +163,7 @@ li a {
     font-weight: 700;
     font-size: 40px;
     margin-left: 64px;
+    margin-bottom: 27px;
 }
 
 .lots-cards {
@@ -169,7 +174,7 @@ li a {
 
 .first-lot {
     background-image: url("../images/first-lot.png");
-    width: auto;
+    width: 334px;
     height: 563px;
     margin-left: 24px;
     background-size: cover;
@@ -200,7 +205,7 @@ li a {
 
 .second-lot {
     background-image: url("../images/second-lot.jpg");
-    width: auto;
+    width: 334px;
     height: 563px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -230,7 +235,7 @@ li a {
 
 .third-lot {
     background-image: url("../images/third-lot.png");
-    width: auto;
+    width: 334px;
     height: 563px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -263,43 +268,49 @@ li a {
     width: auto;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 22px;
     margin-left: 39px;
     margin-right: 40px;
     margin-top: 51px;
     color: white;
     z-index: 3;
+    width: 254px;
+    height: 110px;
     text-decoration: underline;
 }
 
 .first-lot-text {
-    font-size: 26px;
+    font-size: 20px;
     color: white;
     margin-left: 40px;
     margin-right: 40px;
     font-family: Raleway, sans-serif;
     line-height: 24px;
     margin-top: 238px;
+    width: 254px;
+    height: 144px;
 }
 
 .second-lot-text {
-    font-size: 26px;
+    font-size: 20px;
     color: white;
     margin-left: 40px;
     margin-right: 40px;
     font-family: Raleway, sans-serif;
     line-height: 24px;
+    width: 254px;
+    height: 360px;
 }
 
 .third-lot-text {
-    font-size: 26px;
+    font-size: 20px;
     color: white;
     margin-left: 40px;
     margin-right: 40px;
     font-family: Raleway, sans-serif;
     line-height: 24px;
     margin-top: 90px;
-    width: auto;
+    width: 254px;
     height: 264px;
     position: relative;
 }
@@ -345,15 +356,17 @@ li a {
 
 .about-content-first-text {
     margin-left: 72px;
-    width: 950px;
+    width: 693px;
+    height: 312px;
     font-size: 24px;
 }
 
 .about-content-second-text {
-    margin-top: 24px;
     font-size: 24px;
     width: 1000px;
     margin-left: 72px;
+    width: 698px;
+    height: 168px;
 }
 
 .footer-ono-tebe-nado {
