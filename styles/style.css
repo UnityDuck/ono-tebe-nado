@@ -235,6 +235,7 @@ li a {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    margin-right: 24px;
 }
 
 .third-lot:before {
@@ -263,7 +264,7 @@ li a {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 24px;
-    margin-left: 40px;
+    margin-left: 39px;
     margin-right: 40px;
     margin-top: 51px;
     color: white;
@@ -372,16 +373,28 @@ li a {
     font-size: 18px;
 }
 
+.underline-link {
+    text-underline-position: under;
+}
+
 .footer-center {
     list-style-type: none;
     font-size: 18px;
+    text-align: center;
 }
 
-.footer-no-link {
+.no-link {
     text-decoration: none;
     color: black;
 }
 
-.footer-socials {
+.footer-menu-right {
     margin-right: 50px;
+    display: flex;
+    gap: 48px;
+}
+
+.footer-socials {
+    width: 48px;
+    height: 48px;
 }
