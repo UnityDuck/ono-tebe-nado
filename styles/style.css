@@ -268,7 +268,6 @@ li a {
     margin-right: 40px;
     margin-top: 51px;
     color: white;
-    font-weight: 700;
     z-index: 3;
     text-decoration: underline;
 }
@@ -301,7 +300,7 @@ li a {
     margin-right: 40px;
     font-family: Raleway, sans-serif;
     line-height: 24px;
-    margin-top: 150px;
+    margin-top: 115px;
 }
 
 .lot-link {
@@ -331,7 +330,7 @@ li a {
 
 .about-logo {
     width: 148px;
-    height: 114px;   
+    height: 114px;
 }
 
 .about-content-header {
