@@ -265,7 +265,6 @@ li a {
 }
 
 .lot-title {
-    width: auto;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 22px;
@@ -357,13 +356,12 @@ li a {
 .about-content-first-text {
     margin-left: 72px;
     width: 693px;
-    height: 312px;
     font-size: 24px;
+    margin-bottom: 24px;
 }
 
 .about-content-second-text {
     font-size: 24px;
-    width: 1000px;
     margin-left: 72px;
     width: 698px;
     height: 168px;
