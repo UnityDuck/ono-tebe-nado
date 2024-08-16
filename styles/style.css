@@ -1,7 +1,3 @@
-body {
-    font-family: Raleway, sans-serif;
-}
-
 header {
     display: grid;
     grid-template-columns: 1.5fr 2fr 1.5fr;
@@ -22,11 +18,10 @@ li a {
     list-style-type: circle;
     font-size: 18px;
     width: 391.48px;
-    height: 22px;
     margin-left: 50.52px;
 }
   
-.header-menu-firstli {
+.header-menu-li-none {
     list-style-type: none;
 }
 
@@ -44,11 +39,13 @@ li a {
 .adress-phone {
     text-decoration: underline;
     list-style-type: none;
+    text-underline-position: under;
 }
 
 .adress-mail {
     text-decoration: underline;
     list-style-type: none;
+    text-underline-position: under;
 }
 
 .adress-home {
@@ -57,8 +54,9 @@ li a {
     word-break: break-all;
 }
 
-.header-menu-right-info {
+.header-menu-ul-info {
     font-size: 18px;
+    font-style: normal;
 }
 
 .cover {
@@ -67,8 +65,8 @@ li a {
     background-image: url(../images/lotus-flower.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1100p;
-    height: 757px;
+    width: 1100px;
+    min-height: 757px;
 }
 
 .cover-opacity {
@@ -78,19 +76,16 @@ li a {
     background-color: #000;
     width: 100%;
     height: 100%;
-    z-index: 0;
     opacity: 0.6;
 }
 
 .cover-title {
-    font-family: Raleway, sans-serif;
     font-size: 100px;
     color: white;
     position: relative;
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
-    margin-top: 165px 50px;
     letter-spacing: 30px;
 }
 
@@ -104,10 +99,12 @@ li a {
 
 .cover-title-align-left {
     display: block;
+    text-align: left;
 }
 
 .cover-title-align-center {
-    text-align: center;
+    margin-left: 285px;
+    margin-top: 10px;
 }
 
 .cover-title-align-right {
@@ -115,7 +112,7 @@ li a {
 }
 
 .cover-description {
-    padding-top: 147px;
+    padding-top: 127.5px;
     position: relative;
     display: flex;
     align-items: center;
@@ -126,21 +123,21 @@ li a {
     text-transform: uppercase;
     color: white;
     font-size: 22px;
-    margin-left: 78px;
-    word-spacing: 10px;
+    margin-right: 25px;
+    word-spacing: 17.5px;
     font-weight: 400;
-    font-family: Raleway, sans-serif;
     width: 637px;
-    height: 28px;
+    margin-left: 30px;
 }
 
 .cover-auc-button {
+    min-width: 256px;
+    margin-left: 50px;
     padding: 14px 32px;
-    color: #fff;
+    color: white;
     cursor: pointer;
-    font-family: Raleway, sans-serif;
     font-weight: 500;
-    border: 1px #fff solid;
+    border: 1px white solid;
     background-color: transparent;
     font-size: 22px;
     text-transform: uppercase;
@@ -172,97 +169,37 @@ li a {
     gap: 25px;
 }
 
-.first-lot {
+.card {
+    width: 334px;
+    min-height: 563px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.film-lot {
     background-image: url("../images/first-lot.png");
-    width: 334px;
-    height: 563px;
     margin-left: 24px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
 }
 
-.first-lot:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all .2s linear;
-}
-  
-.first-lot:hover:before {
-    background: none;
-}
-  
-.first-lot h3,
-.first-lot p {
-    position: relative;
-}
-
-.second-lot {
+.book-lot {
     background-image: url("../images/second-lot.jpg");
-    width: 334px;
-    height: 563px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
 }
 
-.second-lot:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all .2s linear;
-}
-  
-.second-lot:hover:before {
-    background: none;
-}
-  
-.second-lot h3,
-.second-lot p {
-    position: relative;
-}
-
-.third-lot {
+.painting-lot {
     background-image: url("../images/third-lot.png");
-    width: 334px;
-    height: 563px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
     margin-right: 24px;
 }
 
-.third-lot:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: all .2s linear;
-}
-  
-.third-lot:hover:before {
-    background: none;
-}
-  
-.third-lot h3,
-.third-lot p {
+.film-lot h3,
+.film-lot p,
+.book-lot h3,
+.book-lot p,
+.painting-lot h3,
+.painting-lot p {
     position: relative;
 }
+
 
 .lot-title {
     text-transform: uppercase;
@@ -274,49 +211,36 @@ li a {
     color: white;
     z-index: 3;
     width: 254px;
-    height: 110px;
+    min-height: 110px;
     text-decoration: underline;
 }
 
-.first-lot-text {
+
+.lot-text {
     font-size: 20px;
+    width: 254px;
     color: white;
     margin-left: 40px;
     margin-right: 40px;
-    font-family: Raleway, sans-serif;
     line-height: 24px;
+}
+
+.film-lot-text {
     margin-top: 210px;
-    width: 254px;
-    height: 144px;
+    min-height: 144px;
 }
 
-.second-lot-text {
-    font-size: 20px;
-    color: white;
-    margin-left: 40px;
-    margin-right: 40px;
-    font-family: Raleway, sans-serif;
-    line-height: 24px;
-    width: 254px;
-    height: 360px;
+.book-lot-text {
+    min-height: 360px;
 }
 
-.third-lot-text {
-    font-size: 20px;
-    color: white;
-    margin-left: 40px;
-    margin-right: 40px;
-    font-family: Raleway, sans-serif;
-    line-height: 24px;
+.painting-lot-text {
     margin-top: 90px;
-    width: 254px;
-    height: 264px;
-    position: relative;
+    min-height: 264px;
 }
 
 .lot-link {
     margin-top: 12.5px;
-    font-family: Raleway;
     margin-left: 64px;
     font-size: 20px;
     color: black;
@@ -329,8 +253,8 @@ li a {
 
 .about-ellipse {
     background-color: #000;
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     margin-left: 71px;
     margin-top: 35px;
     border-radius: 50%;
@@ -345,7 +269,7 @@ li a {
 }
 
 .about-content-header {
-    margin-left: 72px;
+    margin-left: 70px;
     margin-top: 133px;
     font-size: 40px;
     font-weight: 700;
@@ -353,45 +277,45 @@ li a {
     margin-bottom: 100px;
 }
 
-.about-content-first-text {
-    margin-left: 72px;
+.about-content-text-up {
+    margin-left: 70px;
     width: 693px;
     font-size: 20px;
     margin-bottom: 24px;
 }
 
-.about-content-second-text {
+.about-content-text-down {
     font-size: 20px;
-    margin-left: 72px;
+    margin-left: 70px;
     width: 698px;
-    height: 168px;
+    min-height: 168px;
 }
 
-.footer-ono-tebe-nado {
+.all-footer {
     margin-top: 180px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 88px;
 }
 
-.footer-menu-left {
+.footer-menu-contact {
     justify-content: start;
     width: 240.52px;
     margin-left: 50px;
+    font-style: normal;
 }
 
 .footer-adress {
     list-style-type: none;
     font-size: 18px;
-}
-
-.underline-link {
     text-underline-position: under;
 }
 
-.footer-center {
+.footer-li-menu {
     list-style-type: none;
     font-size: 18px;
     text-align: center;
+    text-underline-position: under;
 }
 
 .no-link {
@@ -399,7 +323,11 @@ li a {
     color: black;
 }
 
-.footer-menu-right {
+.menu-underline {
+    text-underline-position: under;
+}
+
+.footer-menu-socials {
     margin-right: 50px;
     display: flex;
     gap: 48px;
