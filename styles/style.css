@@ -99,7 +99,7 @@ li a {
 }
 
 .cover-title-align-center {
-    text-align-last: center;
+    text-align: center;
 }
 
 .cover-title-align-right {
@@ -173,11 +173,14 @@ li a {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .film-lot {
     background-image: url("../images/first-lot.png");
-    display: grid;
 }
 
 .book-lot {
