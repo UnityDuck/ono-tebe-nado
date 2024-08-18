@@ -36,19 +36,13 @@ li a {
     height: 100%;
 }
 
-.info-underline-signer {
-    text-decoration: underline;
-    list-style-type: none;
-    text-underline-position: under;
-}
-
 .adress-home {
     width: 240px;
     list-style-type: none;
     word-break: break-all;
 }
 
-.header-menu-adress-info {
+.menu-adress-info {
     font-size: 18px;
     font-style: normal;
 }
@@ -224,14 +218,6 @@ li a {
     line-height: 24px;
 }
 
-.film-lot-text {
-    padding-top: 200px;
-}
-
-.painting-lot-text {
-    padding-top: 100px;
-}
-
 .lot-link {
     display: flex;
     margin-top: 30px;
@@ -292,17 +278,16 @@ li a {
     margin-bottom: 88px;
 }
 
-.menu-contact {
+.contact-menu-rebuilder {
     justify-content: start;
     width: 240.52px;
     margin-left: 50px;
     font-style: normal;
+    list-style-type: none;
 }
 
 .menu-adress {
     list-style-type: none;
-    font-size: 18px;
-    text-underline-position: under;
 }
 
 .footer-list-menu {
